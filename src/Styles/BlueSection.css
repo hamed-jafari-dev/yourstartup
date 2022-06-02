@@ -1,0 +1,89 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+#blueSection {
+  @apply flex items-center bg-gradient-to-b from-mainColor to-darkColor text-white justify-between flex-wrap py-16 p-7 pb-0;
+  z-index: 400;
+}
+#blueSection .features {
+  @apply text-center mb-16;
+}
+#blueSection .features h2 {
+  @apply text-4xl font-bold mb-5;
+}
+#blueSection .features h5 {
+  @apply text-xl mb-16 font-medium;
+}
+#blueSection .features h3 {
+  @apply text-3xl font-bold text-center mb-3 mt-10;
+}
+#blueSection .features p {
+  @apply text-lg;
+  line-height: 40px;
+}
+#blueSection .features .learnMore {
+  @apply mt-5 text-lg;
+}
+#blueSection .features .fontIcon {
+  @apply text-orangeColor bg-darkerColor;
+  font-size: 3em;
+  font-style: normal;
+  border-radius: 50%;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+#blueSection .features .icoPhoneCanel:before {
+  content: "\e90a";
+}
+#blueSection .features .icoMarketing:before {
+  content: "\e909";
+}
+#blueSection .features .icoTroubleshooting:before {
+  content: "\e90b";
+}
+#blueSection .Offering {
+  @apply bg-darkerColor rounded-lg text-center md:p-[80px] p-[40px];
+}
+#blueSection .Offering h2 {
+  @apply text-4xl font-bold mb-2;
+}
+#blueSection .Offering h3 {
+  @apply text-4xl font-bold mb-4 text-orangeColor;
+}
+#blueSection .Offering p {
+  @apply text-lg mb-5;
+}
+#blueSection .Offering button {
+  @apply text-lg text-orangeColor bg-mainColor font-medium px-16 py-5 mt-10;
+}
+#blueSection .mobileApp {
+  @apply mt-16 mb-[-5rem];
+}
+#blueSection .mobileApp h2 {
+  @apply font-bold text-5xl mb-12 mt-52;
+}
+#blueSection .mobileApp .desc {
+  @apply text-lg;
+}
+#blueSection .mobileApp .mainImage img {
+  @apply absolute bottom-0;
+}
+#blueSection .mobileApp .mobileAppFeatures {
+  @apply mt-10 mb-16;
+}
+#blueSection .mobileApp .mobileAppFeatures li {
+  @apply font-bold text-2xl my-3;
+}
+#blueSection .mobileApp .mobileAppFeatures li:before {
+  @apply w-[24px] h-[24px] inline-block rounded-full border-orangeColor border-2 mr-2;
+  content: "";
+  vertical-align: middle;
+}
+#blueSection .mobileApp .stores a {
+  @apply inline-block;
+}
+#blueSection .mobileApp .stores img {
+  @apply max-w-[150px] md:max-w-[250px];
+}
+
+/*# sourceMappingURL=BlueSection.css.map */

@@ -1,0 +1,147 @@
+@import 'variable';
+
+body{
+  @apply text-darkestColor;
+  font-family: Assistant;
+  font-size: 16px;
+  overflow-x: hidden;
+}
+
+.topBackground{
+  @apply relative;
+    background-color: rgba(255,255,255,0);
+    background-image: radial-gradient(circle at right bottom, hsla(211,87%,43%,calc( 100% - 97% )) 48%,#ffffff 25%);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-width: 0px 0px 0px 0px;
+    border-color: hsla(211,87%,43%,calc( 100% - 97% ));
+    border-style: solid;
+    //position: absolute;
+    margin-top: 0px;
+    padding-right: 30px;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+    padding-left: 30px;
+/*    width: 100%;
+    height:100%;
+    top: 50%;
+    right:-50%;*/
+    z-index: 0 !important;
+}
+
+.container{
+  @apply flex flex-wrap w-full p-3 sm:p-3 md:p-4 lg:p-5 mx-auto;
+}
+
+
+.btn{
+  @apply
+  text-white
+  bg-blue-700
+  hover:bg-blue-800
+  focus:ring-4
+  focus:outline-none
+  focus:ring-blue-300
+  font-medium
+  rounded-lg
+  text-sm
+  w-full
+  sm:w-auto
+  px-5
+  py-2.5
+  text-center
+  ;
+}
+
+.buttonPrimary{
+  background: $darkColor;
+  color: $white;
+  padding: 10px 20px;
+}
+
+.buttonWhite{
+  @apply bg-white px-[20px] py-[10px] text-mainBlue;
+}
+
+.img-responsive{
+  @apply max-h-full max-w-full;
+}
+
+.inputTxt{
+  @apply
+  border
+  border-gray-300
+  text-gray-900
+  text-sm rounded-lg
+  focus:ring-blue-500
+  focus:border-blue-500
+  block w-full p-2.5
+  ;
+}
+
+
+.fontIcon{
+  font-family: your-startup-icon
+}
+
+.fontIcon:before{
+  font-family: your-startup-icon;
+}
+
+
+
+@font-face {
+  font-family: Assistant;
+  font-style: normal;
+  font-weight: 100;
+  src: local('Assistant ExtraLight'), url('/public/fonts/Assistant/Assistant-ExtraLight.woff') format('woff');
+}
+
+@font-face {
+  font-family: Assistant;
+  font-style: normal;
+  font-weight: 300;
+  src: local('Assistant Light'), url('/public/fonts/Assistant/Assistant-Light.woff') format('woff');
+}
+
+@font-face {
+  font-family: Assistant;
+  font-style: normal;
+  font-weight: normal;
+  src: local('Assistant Regular'), url('/public/fonts/Assistant/Assistant-Regular.woff') format('woff');
+}
+
+@font-face {
+  font-family: Assistant;
+  font-style: normal;
+  font-weight: 500;
+  src: local('Assistant SemiBold'), url('/public/fonts/Assistant/Assistant-SemiBold.woff') format('woff');
+}
+
+@font-face {
+  font-family: Assistant;
+  font-style: normal;
+  font-weight: 800;
+  src: local('Assistant Bold'), url('/public/fonts/Assistant/Assistant-Bold.woff') format('woff');
+}
+
+@font-face {
+  font-family: Assistant;
+  font-style: normal;
+  font-weight: 900;
+  src: local('Assistant ExtraBold'), url('/public/fonts/Assistant/Assistant-ExtraBold.woff') format('woff');
+}
+
+
+@font-face {
+  font-family: 'your-startup-icon';
+  src:  url('/public/fonts/icon/your-startup-icon.eot?fuoi4');
+  src:  url('/public/fonts/icon/your-startup-icon.eot?fuoi4#iefix') format('embedded-opentype'),
+  url('/public/fonts/icon/your-startup-icon.ttf?fuoi4') format('truetype'),
+  url('/public/fonts/icon/your-startup-icon.woff?fuoi4') format('woff'),
+  url('/public/fonts/icon/your-startup-icon.svg?fuoi4#your-startup-icon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}

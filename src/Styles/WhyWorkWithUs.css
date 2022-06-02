@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+#whyWorkWithUs {
+  @apply flex items-center justify-between flex-wrap p-7;
+}
+#whyWorkWithUs h2 {
+  @apply text-6xl font-bold mb-5 text-darkColor;
+}
+#whyWorkWithUs h5 {
+  @apply text-2xl text-mainColor mb-7 font-medium;
+}
+#whyWorkWithUs .btn {
+  @apply text-lg font-medium;
+}
+#whyWorkWithUs .desc {
+  @apply text-lg;
+  line-height: 38px;
+}
+#whyWorkWithUs .btn {
+  @apply mb-5 px-16 py-4;
+}
+#whyWorkWithUs .brands .item {
+  @apply text-center py-2 px-2;
+}
+#whyWorkWithUs .brands .item a {
+  @apply bg-lightestColor w-full inline-block h-full py-8 font-bold text-4xl rounded-md;
+}
+
+/*# sourceMappingURL=WhyWorkWithUs.css.map */

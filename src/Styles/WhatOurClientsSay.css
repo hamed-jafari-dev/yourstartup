@@ -1,0 +1,36 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+#whatOurClientsSay {
+  @apply flex items-center justify-between flex-wrap py-16 p-7 bg-lightestColor;
+}
+#whatOurClientsSay h2 {
+  @apply text-6xl font-bold mb-5 text-darkerColor;
+}
+#whatOurClientsSay h5 {
+  @apply text-2xl text-mainColor mb-16 font-medium;
+}
+#whatOurClientsSay .clients {
+  @apply text-center;
+}
+#whatOurClientsSay .clients h3 {
+  @apply text-5xl text-darkerColor font-bold text-center mb-3;
+}
+#whatOurClientsSay .clients p {
+  @apply text-lg;
+  line-height: 40px;
+}
+#whatOurClientsSay .clients .profile {
+  @apply text-center w-full mt-7;
+}
+#whatOurClientsSay .clients .profile .avatar {
+  @apply text-center w-full inline-block mb-7;
+}
+#whatOurClientsSay .clients .profile .avatar img {
+  @apply rounded-full w-full inline-block max-w-[116px];
+}
+#whatOurClientsSay .clients .profile a {
+  @apply font-bold text-2xl text-darkColor;
+}
+
+/*# sourceMappingURL=WhatOurClientsSay.css.map */

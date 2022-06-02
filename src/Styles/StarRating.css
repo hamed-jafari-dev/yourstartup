@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+.starRating {
+  @apply w-full text-center;
+}
+.starRating ul {
+  @apply w-auto inline-block;
+}
+.starRating ul li {
+  @apply float-right px-1.5;
+  display: flex;
+}
+.starRating ul li i:before {
+  @apply text-orangeColor text-3xl;
+  font-family: your-startup-icon;
+  font-style: normal;
+  content: "\e903";
+}
+
+/*# sourceMappingURL=StarRating.css.map */

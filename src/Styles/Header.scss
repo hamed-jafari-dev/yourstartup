@@ -1,0 +1,79 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+#header{
+  @apply flex items-center justify-between flex-wrap;
+  z-index: 1;
+  .logo{
+    @apply lg:max-w-[280px] max-w-full min-w-[250px]
+  }
+  .btnBook{
+    @apply rounded-md px-10;
+  }
+  .mainMenu{
+    ul{
+      li{
+        @apply mx-2 px-4 py-3 border-2 border-transparent rounded-xl
+        block mt-4 inline-block mt-0 text-darkerColor hover:text-mainColor mr-4;
+        &.active{
+          @apply border-blue-800;
+        }
+        a{
+          span{
+            @apply font-medium;
+          }
+        }
+      }
+      &.active{
+
+      }
+    }
+  }
+  .collapsed-nav-icon {
+    position: relative;
+    width: 100%;
+    display: inline-block;
+    font-size: 2em;
+    cursor: pointer;
+
+    .collapsed-nav-icon-open {
+      opacity: 1;
+      width: 1em;
+      transition: all calc(300 * 1ms) cubic-bezier(.42, .01, .58, 1);
+      position: absolute;
+      right: 0;
+      transform: rotate(0);
+
+      &:before {
+        @apply text-darkColor;
+        content: "\e900";
+      }
+    }
+
+    .collapsed-nav-icon-close {
+      width: 1em;
+      transition: all calc(300 * 1ms) cubic-bezier(.42, .01, .58, 1);
+      position: absolute;
+      right: 0;
+      opacity: 0;
+      transform: rotate(0);
+      &:before {
+        @apply text-darkColor;
+        content: "\e904";
+      }
+    }
+
+    &.active {
+      .collapsed-nav-icon-open {
+        opacity: 0;
+        transform: rotate(360deg);
+      }
+
+      .collapsed-nav-icon-close {
+        opacity: 1;
+        transform: rotate(360deg);
+      }
+    }
+  }
+}

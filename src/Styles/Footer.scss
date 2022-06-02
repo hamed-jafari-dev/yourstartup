@@ -1,0 +1,68 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+#footer{
+  @apply flex items-center justify-between flex-wrap;
+  .logo{
+    @apply lg:max-w-[280px] max-w-full mb-10 min-w-[250px];
+  }
+  .newsletter{
+    h2{
+      @apply
+      font-bold
+        text-darkestColor
+       text-3xl;
+    }
+    .inputTxt{
+      @apply text-xl;
+    }
+    .btn{
+      @apply text-xl rounded-md;
+    }
+  }
+  .copyright{
+    @apply border-t border-t-gray-200 w-full pt-5 text-center mt-16;
+    p{
+      @apply text-center
+    }
+  }
+  .footerMenu{
+    @apply text-xl font-medium;
+    ul{
+      li{
+        @apply my-4;
+        a{
+          @apply text-darkerColor hover:text-mainColor;
+        }
+        &.active{
+          a{
+            @apply text-mainColor;
+          }
+        }
+      }
+    }
+  }
+  .SocialMedia{
+    @apply w-full text-left mt-5;
+    ul{
+      @apply w-auto inline-block;
+      li{
+        @apply float-right mx-1;
+        i{
+          @apply px-1 inline-block text-mainBlue;
+          font-style: normal;
+        }
+      }
+    }
+    .icoFb:before{
+      content: "\e907";
+    }
+    .icoTw:before{
+      content: "\e90c";
+    }
+    .icoLi:before{
+      content: "\e908";
+    }
+  }
+}

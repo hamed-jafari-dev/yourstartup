@@ -1,0 +1,18 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import "variable";
+
+#topSection{
+  @apply flex items-center justify-between flex-wrap;
+  z-index: 400;
+  h2{
+    @apply text-7xl text-[3em] font-bold text-orangeColor;
+  }
+  h3{
+    @apply text-5xl font-bold text-mainColor;
+  }
+  .viewOurCase{
+    @apply text-2xl px-10 py-3;
+  }
+}

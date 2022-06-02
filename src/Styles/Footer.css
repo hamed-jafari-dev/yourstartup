@@ -1,0 +1,62 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+#footer {
+  @apply flex items-center justify-between flex-wrap;
+}
+#footer .logo {
+  @apply lg:max-w-[280px] max-w-full mb-10 min-w-[250px];
+}
+#footer .newsletter h2 {
+  @apply font-bold
+        text-darkestColor
+       text-3xl;
+}
+#footer .newsletter .inputTxt {
+  @apply text-xl;
+}
+#footer .newsletter .btn {
+  @apply text-xl rounded-md;
+}
+#footer .copyright {
+  @apply border-t border-t-gray-200 w-full pt-5 text-center mt-16;
+}
+#footer .copyright p {
+  @apply text-center;
+}
+#footer .footerMenu {
+  @apply text-xl font-medium;
+}
+#footer .footerMenu ul li {
+  @apply my-4;
+}
+#footer .footerMenu ul li a {
+  @apply text-darkerColor hover:text-mainColor;
+}
+#footer .footerMenu ul li.active a {
+  @apply text-mainColor;
+}
+#footer .SocialMedia {
+  @apply w-full text-left mt-5;
+}
+#footer .SocialMedia ul {
+  @apply w-auto inline-block;
+}
+#footer .SocialMedia ul li {
+  @apply float-right mx-1;
+}
+#footer .SocialMedia ul li i {
+  @apply px-1 inline-block text-mainBlue;
+  font-style: normal;
+}
+#footer .SocialMedia .icoFb:before {
+  content: "\e907";
+}
+#footer .SocialMedia .icoTw:before {
+  content: "\e90c";
+}
+#footer .SocialMedia .icoLi:before {
+  content: "\e908";
+}
+
+/*# sourceMappingURL=Footer.css.map */

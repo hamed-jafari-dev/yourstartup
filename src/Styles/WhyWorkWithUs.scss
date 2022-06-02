@@ -1,0 +1,37 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+#whyWorkWithUs{
+  @apply flex items-center justify-between flex-wrap p-7;
+
+  h2{
+    @apply text-6xl font-bold mb-5 text-darkColor;
+  }
+
+  h5{
+    @apply text-2xl text-mainColor mb-7 font-medium;
+  }
+
+  .btn{
+    @apply text-lg font-medium;
+  }
+
+  .desc{
+    @apply text-lg;
+    line-height: 38px;
+  }
+
+  .btn{
+    @apply mb-5 px-16 py-4
+  }
+
+  .brands{
+    .item{
+      @apply text-center py-2 px-2;
+      a{
+        @apply bg-lightestColor w-full inline-block h-full py-8 font-bold text-4xl rounded-md;
+      }
+    }
+  }
+}

@@ -1,0 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.menuMobile{
+  @apply w-[96%] text-center bg-gradient-to-b from-mainColor to-darkerColor absolute top-28 right-[2%];
+  z-index: 9;
+  opacity: 0;
+  visibility: hidden;
+  transition: all calc(300 * 1ms) cubic-bezier(.42, .01, .58, 1);
+  ul{
+    @apply w-auto inline-block w-full;
+    li{
+      @apply float-right px-1.5 inline-block w-full text-right border-b-blue-800 py-4 px-3;
+      a{
+        @apply text-white;
+      }
+    }
+  }
+  &.active{
+      opacity: 1;
+      visibility: visible;
+  }
+}

@@ -1,0 +1,96 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+#blueSection{
+  @apply flex items-center bg-gradient-to-b from-mainColor to-darkColor text-white justify-between flex-wrap py-16 p-7 pb-0;
+  z-index: 400;
+
+  .features{
+    @apply text-center mb-16;
+    h2{
+      @apply text-4xl font-bold mb-5;
+    }
+
+    h5{
+      @apply text-xl mb-16 font-medium ;
+    }
+    h3{
+      @apply text-3xl font-bold text-center mb-3 mt-10;
+    }
+    p{
+      @apply text-lg;
+      line-height: 40px;
+    }
+    .learnMore{
+      @apply mt-5 text-lg;
+    }
+    .fontIcon{
+      @apply text-orangeColor bg-darkerColor;
+      font-size: 3em;
+      font-style: normal;
+      border-radius: 50%;
+      padding: 20px;
+      margin-bottom: 20px;
+    }
+    .icoPhoneCanel:before{
+      content: "\e90a";
+    }
+    .icoMarketing:before{
+      content: "\e909";
+    }
+    .icoTroubleshooting:before{
+      content: "\e90b";
+    }
+  }
+
+  .Offering{
+    @apply bg-darkerColor rounded-lg text-center md:p-[80px] p-[40px];
+    h2{
+      @apply text-4xl font-bold mb-2;
+    }
+    h3{
+      @apply text-4xl font-bold mb-4 text-orangeColor;
+    }
+    p{
+      @apply text-lg mb-5;
+    }
+    button{
+      @apply text-lg text-orangeColor bg-mainColor font-medium px-16 py-5 mt-10;
+    }
+  }
+
+  .mobileApp{
+    @apply mt-16 mb-[-5rem];
+    h2{
+      @apply font-bold text-5xl mb-12 mt-52;
+    }
+    .desc{
+      @apply text-lg;
+    }
+    .mainImage{
+      img{
+        @apply absolute bottom-0;
+      }
+    }
+    .mobileAppFeatures{
+      @apply mt-10 mb-16;
+      li{
+        @apply font-bold text-2xl my-3;
+        &:before{
+          @apply w-[24px] h-[24px] inline-block rounded-full border-orangeColor border-2 mr-2;
+          content: "";
+          vertical-align: middle;
+        }
+      }
+    }
+    .stores{
+      a{
+        @apply inline-block;
+      }
+      img{
+        @apply max-w-[150px] md:max-w-[250px]
+      }
+    }
+  }
+}
